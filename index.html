@@ -162,11 +162,26 @@
 
     <!-- <h4>Launching Website</h4> -->
     <!-- HTML !-->
-    <div style="text-align: center;">
+    <!-- <div style="text-align: center;">
         <a href="https://club.biharsports.org/auth/login?next=/"><button class="button-78"
                 style="font-size: 30px; padding: 2rem; margin-top: 140px;" role="button">Click here to Launch
                 Website</button></a>
+    </div> -->
+
+    <div style="text-align: center;">
+        <button id="launchButton" class="button-78" style="font-size: 30px; padding: 2rem; margin-top: 140px;"
+            role="button">
+            Click here to Launch Website
+        </button>
     </div>
+    <script>
+        document.getElementById('launchButton').addEventListener('click', function () {
+            // Redirect to the video page
+            window.location.href = 'video.html';
+        });
+
+    </script>
+
 </body>
 
 </html>
